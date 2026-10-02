@@ -29,7 +29,7 @@ The fictional catalog replaces two 500-sheet packs with four 250-sheet packs, re
 ## Embed it
 
 ```sh
-npm install github:gbesse/matchgraph#v0.1.0
+npm install github:gbesse/matchgraph#v0.1.1
 ```
 
 ```js
@@ -74,6 +74,10 @@ node bin/matchgraph.mjs jev local-data/graph0.json paper-a paper-b office-printi
 Evidence references and reviewer names are host assertions, not verified supplier attestations. This alpha has no supplier network, authenticated review UI, web crawler or production purchasing integration. Trusted snapshots and domain review are necessary; neither Jev nor matching units establishes real-world interchangeability.
 
 A growing corpus of reviewed, versioned supplier relationships could become valuable to procurement integrations. The graph format and lifecycle are implemented here; acquiring legitimate evidence and adoption is the next step, not an existing network effect.
+
+## Shareable demo report
+
+Run `npm run demo:report` to capture this repository’s bundled example as one JSON object with the project purpose, version and complete demo output. The command fails if the demo fails, so the report is useful when sharing a reproducible first look or reporting unexpected behavior. The bundled demo’s data and safety boundaries still apply.
 
 ## Validation and Jev integration
 
